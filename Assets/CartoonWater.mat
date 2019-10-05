@@ -23,6 +23,7 @@ Material:
     - Vector1_128E1720: 1
     - Vector1_2DC24106: 7
     - Vector1_484EF780: 5
+    - Vector1_E1D244C9: 0.1
     m_Colors:
     - Color_1062C796: {r: 0.4, g: 0.8784314, b: 1.796078, a: 0}
-    - Color_8DB2CC11: {r: 0.2216981, g: 0.617186, b: 1, a: 0}
+    - Color_8DB2CC11: {r: 0.26125845, g: 0.60784316, b: 0.9716981, a: 0}
