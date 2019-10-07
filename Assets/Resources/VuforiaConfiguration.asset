@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
+    vuforiaLicenseKey: ARwvh6b/////AAABmb5jlhxvVk49llW0IrHPKP86jwnMa4p7FNPnYEGMS8vUsruDWGHeWe4oGApazFTyjx+2cQ+m2/quu8w1pN2JqfcwKKDIkyVci4BwgxYW6KH/y+RBZox/nCDEtAe1phfhBXNCQT9kKdw0MvrFxbJ41h8GjMzx3J0Qp720eNUPJi4XKOonCh7VCFrkZSD8ur+WE2LD3X3I3QmEHy7hGBQmxZFsyOl8vICd9zX5hPXBobd7tS9dXIa2VorptQcSF/DtnAsCdefgpxoD3RB6Ip930kFqF7KZQrkZDXtfeGjgiUCdVwH487mJzQ0StHG0bOnVU1+btPzrhJXB4YhTwlL06RI5LOuvFz1flxJuyNzQOr+e
     ufoLicenseKey: QVoxN0oxTC8vLy8vQUFBQUtHUzVuWExhblVQcWt0MmdxaXZPbTZJdWRNOTQ3R2d6dXBCVkttZTVHMUJnbWljN2JLcHArTzhXbVNZUU5TRElGeXhWRlZSKzlMaEFEbkkrSC9WeTcxZHpUS2NjUUk5K1RCMXB2Qk1vazR2cVI2YnBRYVhZTDNLaVBMTGo4RXhYQlB3TlI1R3oxNXk0b09GUzFwNS9rSEkzaC9XTGRCL2l4TGxBYyt1T295MGFsZnQyWmVWU0Rmd3c2QVM4QVB4RDhVSllvRkVYcjNvQk9vR1JidFhDTDNSRDhVOEEzV2JubUhaejlsUEVCVnNTR1BtZ1ROUTFiKzF5VjVUOEFKZmFpNVdkTXdsZ0E4cUFrVGdERkl3bHlyWW1DZURBU2tvdjhXRjEzai94SWxUS2N5TUNUanNwaHVhZnYrNCt3SUlaL2FXSmNya1BTdVludXY0RUZsOXVJZGdpRitVSUhhbGg5d1RQazNoWDhFQnA=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
@@ -21,8 +21,8 @@ MonoBehaviour:
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
-    version: 1.0.0
-    eulaAcceptedVersions: 
+    version: 8.3.8
+    eulaAcceptedVersions: '{"Values":["8.3"]}'
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
@@ -49,13 +49,14 @@ MonoBehaviour:
   videoBackground:
     clippingMode: 0
     numDivisions: 2
-    videoBackgroundShader: {fileID: 0}
-    matteShader: {fileID: 0}
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    arcoreRequirement: 0
+    arcoreRequirement: 1
     trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
