@@ -2,6 +2,7 @@
 
 public class FollowGyro : MonoBehaviour
 {
+
     [Header("Tweaks")]
     [SerializeField] private Quaternion baseRotation = new Quaternion(0,0,1,0);
 
@@ -10,7 +11,7 @@ public class FollowGyro : MonoBehaviour
     }
 
     private void Update() {
-        transform.localRotation = GyroManager.Instance.GetGyroRotation() * baseRotation;
+        // transform.localRotation = GyroManager.Instance.GetGyroRotation() * baseRotation;
     }
 
 }

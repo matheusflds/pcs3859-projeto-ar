@@ -28,6 +28,8 @@ public class GyroManager : MonoBehaviour
     }
     #endregion
 
+    float gravity = -9.8f;
+
     [Header("Logic")]
     private Gyroscope gyro;
     private Quaternion rotation;
