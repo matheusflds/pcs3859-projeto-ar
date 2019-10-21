@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -356,7 +356,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'base-1Material
+  m_Name: 'rocks_planeMaterial
 
     13430'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
@@ -371,7 +371,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1990f8eeb4c64a64a45d91632a3bac38, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9b71c0b57d944bf198eae17df90d8b62, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3177,7 +3177,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.333, y: 0, z: 0.5}
+      m_Extent: {x: 0.5, y: 0, z: 0.35000002}
   m_Shapes:
     vertices: []
     shapes: []
@@ -3253,7 +3253,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: fa7eaabe00000000000000bf000000000000803f000000000000000000000000fa7eaabe000000000000003f000000000000803f00000000000000000000803ffa7eaa3e00000000000000bf000000000000803f000000000000803f00000000fa7eaa3e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 000000bf000000003433b3be000000000000803f000000000000000000000000000000bf000000003433b33e000000000000803f00000000000000000000803f0000003f000000003433b3be000000000000803f000000000000803f000000000000003f000000003433b33e000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -4223,14 +4223,14 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: base-1
+  mTrackableName: rocks_plane
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/pcs3859-project-db.xml
-  mAspectRatio: 1.5015014
+  mAspectRatio: 0.70000005
   mImageTargetType: 0
-  mWidth: 50
-  mHeight: 75.07507
+  mWidth: 13
+  mHeight: 9.1
 --- !u!4 &1591102580
 Transform:
   m_ObjectHideFlags: 0
@@ -4240,7 +4240,7 @@ Transform:
   m_GameObject: {fileID: 1591102574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 75.07507, y: 75.07507, z: 75.07507}
+  m_LocalScale: {x: 13, y: 13, z: 13}
   m_Children:
   - {fileID: 2135189319}
   - {fileID: 1219485501}
