@@ -21,6 +21,7 @@ public class FollowGyro : MonoBehaviour
         Vector3 velocity = rb.velocity;
         // rb.velocity = Vector3.ClampMagnitude(velocity, 5f);
 
+        Debug.Log(GameObject.Find("ARCamera").transform.TransformDirection(new Vector3(0, 0, 1)));
     }
 
 }
