@@ -17,7 +17,7 @@ public class ChangeScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("MenuScene");
         }
     }
 }
