@@ -13,6 +13,8 @@ public class GlobalFlock : MonoBehaviour
 
     public static Vector3 goalPos = Vector3.zero;
 
+    public GameObject imageTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class GlobalFlock : MonoBehaviour
                                       Random.Range(-tankSize, tankSize));
             allFish[i] = (GameObject)Instantiate(fishPrefab, pos, Quaternion.identity);
             allFish[i].transform.parent = this.transform;
+            allFish[i].SetActive(false);
         }
     }
 
