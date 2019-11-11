@@ -90,6 +90,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
+            GameObject fishManager = GameObject.Find("FishManager");
 
             // Enable rendering:
             foreach (var component in rendererComponents)
@@ -102,6 +103,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Enable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = true;
+
+
+            for (int i = 0; i < fishManager.transform.childCount; i++)
+            {
+                GameObject child = fishManager.transform.GetChild(i).gameObject;
+                child.SetActive(true);
+            }
         }
     }
 
