@@ -1,62 +1,17 @@
 fileFormatVersion: 2
-guid: cbcbcd542f3f3a448ad0652ebd08c0b1
+guid: 4079c83b63e80614bbc04c9311dee392
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: joint10
-    100004: joint11
-    100006: joint12
-    100008: joint13
-    100010: joint14
-    100012: joint15
-    100014: joint16
-    100016: joint17
-    100018: joint18
-    100020: joint19
-    100022: joint2
-    100024: joint20
-    100026: joint3
-    100028: joint4
-    100030: joint5
-    100032: joint6
-    100034: joint7
-    100036: joint8
-    100038: joint9
-    100040: pCylinder1
-    100042: Rope_End
-    100044: Rope_Start
     400000: //RootNode
-    400002: joint10
-    400004: joint11
-    400006: joint12
-    400008: joint13
-    400010: joint14
-    400012: joint15
-    400014: joint16
-    400016: joint17
-    400018: joint18
-    400020: joint19
-    400022: joint2
-    400024: joint20
-    400026: joint3
-    400028: joint4
-    400030: joint5
-    400032: joint6
-    400034: joint7
-    400036: joint8
-    400038: joint9
-    400040: pCylinder1
-    400042: Rope_End
-    400044: Rope_Start
     2100000: lambert1
-    2300000: pCylinder1
-    3300000: pCylinder1
-    4300000: pCylinder1
-    9500000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Fishing_Rod
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -85,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 5
+    globalScale: 35
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -106,8 +61,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -116,7 +71,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -134,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
