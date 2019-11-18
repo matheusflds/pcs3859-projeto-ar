@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GetFish : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class GetFish : MonoBehaviour
             float distance = Vector3.Distance(child.transform.position, this.transform.position);
             Debug.Log("Distance: " + distance);
             if (distance <= 2f) {
-                Debug.Log("OI: " + child.ToString());
+                Handheld.Vibrate();
+                SceneManager.LoadScene("FishCaughtScene");
             }
         }
     }
