@@ -195,7 +195,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 225
+  m_fontSize: 210.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -241,7 +241,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -425,12 +425,12 @@ RectTransform:
   m_Children:
   - {fileID: 552020728}
   m_Father: {fileID: 1947062642}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.06, y: 0.3}
-  m_AnchorMax: {x: 0.94, y: 0.45}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.06, y: 0.1}
+  m_AnchorMax: {x: 0.94, y: 0.25}
+  m_AnchoredPosition: {x: 0, y: -0.7999878}
+  m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &511851586
 MonoBehaviour:
@@ -687,12 +687,12 @@ GameObject:
   - component: {fileID: 1059569590}
   - component: {fileID: 1059569589}
   m_Layer: 5
-  m_Name: TutorialButton
+  m_Name: CatalogButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1059569588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -706,12 +706,12 @@ RectTransform:
   m_Children:
   - {fileID: 1749811329}
   m_Father: {fileID: 1947062642}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.06, y: 0.1}
-  m_AnchorMax: {x: 0.94, y: 0.25}
-  m_AnchoredPosition: {x: 0.2000122, y: 0}
-  m_SizeDelta: {x: -0.40002, y: 0}
+  m_AnchorMin: {x: 0.06, y: 0.29900002}
+  m_AnchorMax: {x: 0.94, y: 0.4486563}
+  m_AnchoredPosition: {x: 0.2000122, y: 1.5}
+  m_SizeDelta: {x: -0.40001965, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059569589
 MonoBehaviour:
@@ -740,7 +740,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: f403802cbe0cdad439b8a61e91a09991,
+    m_HighlightedSprite: {fileID: 21300000, guid: d8239de078e844943b475fac68de5ece,
       type: 3}
     m_PressedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -755,7 +755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1947062643}
-        m_MethodName: Tutorial
+        m_MethodName: Catalog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cb9d50da987a13542817d1ff42fce2be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1143b5e32c68dd64eab9489e4d778946, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1602,8 +1602,8 @@ RectTransform:
   m_Children:
   - {fileID: 1763630790}
   - {fileID: 394910447}
-  - {fileID: 511851585}
   - {fileID: 1059569588}
+  - {fileID: 511851585}
   m_Father: {fileID: 1225701593}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
