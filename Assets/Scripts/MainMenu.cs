@@ -24,8 +24,8 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public void Tutorial()
+    public void Catalog()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("CatalogScene");
     }
 }
