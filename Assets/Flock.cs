@@ -6,7 +6,7 @@ public class Flock : MonoBehaviour
 {
     public float speed = 0.001f;
     float rotationSpeed = 1.0f;
-
+    public bool enableMovement = true;
     bool turning = false;
 
     // Start is called before the first frame update
@@ -18,7 +18,13 @@ public class Flock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.localPosition, Vector3.zero) >= GlobalFlock.tankSize)
+
+        if (!enableMovement)
+        {
+            return;
+        }
+
+        if (Vector3.Distance(transform.localPosition, Vector3.zero) >= GlobalFlock.tankSize)
         {
             turning = true;
         }

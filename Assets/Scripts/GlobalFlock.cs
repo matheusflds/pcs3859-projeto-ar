@@ -8,7 +8,7 @@ public class GlobalFlock : MonoBehaviour
     public GameObject goalPrefab;
     public static float tankSize = 0.5f;
 
-    static int numFish = 4;
+    static int numFish = 2;
     public static GameObject[] allFish = new GameObject[numFish];
 
     public static Vector3 goalPos = Vector3.zero;

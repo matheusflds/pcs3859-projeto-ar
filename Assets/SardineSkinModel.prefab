@@ -1308,6 +1308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  enableMovement: 1
 --- !u!1 &8933401269854787577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,6 +1475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.001
+  enableMovement: 0
 --- !u!1 &8933401269854787581
 GameObject:
   m_ObjectHideFlags: 0
