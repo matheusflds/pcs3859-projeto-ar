@@ -7,6 +7,8 @@ public class GetFish : MonoBehaviour
 {
     public Canvas alertTextCanvas;
     private CountDown timer;
+    private CountDown timer2;
+    private bool onDelayAfterTry = false;
     private bool counting = false;
     private bool capturing = false;
     public GameObject fishManager;
@@ -25,12 +27,27 @@ public class GetFish : MonoBehaviour
         }
         CountDown countdown = gameObject.AddComponent(typeof(CountDown)) as CountDown;
         this.timer = countdown;
+        CountDown countdown2 = gameObject.AddComponent(typeof(CountDown)) as CountDown;
+        this.timer2 = countdown2;
         this.alertTextCanvas.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        if (onDelayAfterTry)
+        {
+            if (timer2.timeLeft <= 0)
+            {
+                onDelayAfterTry = false;
+            } 
+            else
+            {
+                return;
+            }
+        }
+
         for (int i = 0; i < fishManager.transform.childCount; i++)
         {
             GameObject child = fishManager.transform.GetChild(i).gameObject;
@@ -54,7 +71,7 @@ public class GetFish : MonoBehaviour
             {
                 counting = true;
                 Handheld.Vibrate();
-                timer.Begin(4);
+                timer.Begin(3);
                 SetMaterial(capturingFishMat);
                 alertTextCanvas.enabled = true;
                 UpdateFishMovement(false);
@@ -66,6 +83,8 @@ public class GetFish : MonoBehaviour
                 capturing = false;
                 alertTextCanvas.enabled = false;
                 UpdateFishMovement(true);
+                onDelayAfterTry = true;
+                timer2.Begin(5);
             }
 
         }
