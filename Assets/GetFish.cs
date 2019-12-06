@@ -7,6 +7,7 @@ public class GetFish : MonoBehaviour
 {
     private CountDown timer;
     private bool counting;
+    private bool capturing;
     public GameObject fishManager;
     public Material standardMat;
     public Material nearFishMat;
@@ -32,19 +33,30 @@ public class GetFish : MonoBehaviour
             float distance = Vector3.Distance(child.transform.position, this.transform.position);
             // Debug.Log("Distance: " + distance);
             if (distance <= 1.5f) {
-                this.SetMaterial(this.capturingFishMat);
                 if (!this.counting) {
-                    Handheld.Vibrate();
-                    this.timer.Start(4);
-                    this.counting = true;
-                } else if(this.timer.timeLeft == 0) {
-                    SceneManager.LoadScene("FishCaughtScene");
-                    this.counting = false;
+                    this.capturing = true;
                 }
-            } else {
+            }
+        }
+
+
+        if (this.capturing)
+        {
+            if (!this.counting)
+            {
+                this.counting = true;
+                Handheld.Vibrate();
+                this.timer.Start(4);
+                this.SetMaterial(this.capturingFishMat); 
+            }
+            else if (this.timer.timeLeft == 0)
+            {
                 this.SetMaterial(this.standardMat);
                 this.counting = false;
+                this.capturing = false;
+                SceneManager.LoadScene("FishCaughtScene");
             }
+            
         }
     }
 
