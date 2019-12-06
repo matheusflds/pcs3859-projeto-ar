@@ -32,9 +32,9 @@ public class GetFish : MonoBehaviour
             float distance = Vector3.Distance(child.transform.position, this.transform.position);
             // Debug.Log("Distance: " + distance);
             if (distance <= 1.5f) {
-                Handheld.Vibrate();
                 this.SetMaterial(this.capturingFishMat);
                 if (!this.counting) {
+                    Handheld.Vibrate();
                     this.timer.Start(4);
                     this.counting = true;
                 } else if(this.timer.timeLeft == 0) {
