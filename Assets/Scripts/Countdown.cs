@@ -15,15 +15,6 @@ public class CountDown : MonoBehaviour
         Time.timeScale = 1; //Just making sure that the timeScale is right
     }
 
-    // public void Begin() {
-    //     StartCoroutine("LoseTime");
-    //     Time.timeScale = 1;
-    // }
-    // void Update()
-    // {
-    //     Debug.Log(timeLeft);
-    //     // countdown.text = ("" + timeLeft); //Showing the Score on the Canvas
-    // }
     //Simple Coroutine
     IEnumerator LoseTime()
     {
