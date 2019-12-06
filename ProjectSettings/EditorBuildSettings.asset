@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FishCaughtScene.unity
     guid: 4917fe10175933644870f8ebe5fc218b
+  - enabled: 1
+    path: Assets/Scenes/CatalogScene.unity
+    guid: e3eeacb90ffee6049b90de223a8a87e0
   m_configObjects: {}
