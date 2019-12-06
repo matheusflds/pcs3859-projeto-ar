@@ -29,7 +29,7 @@ public class RenderRopeProjection : MonoBehaviour
                 this.gameObject.transform.position = new Vector3(pos.x, this.transform.position.y, pos.z);
                 mustShowSurfaceContact = true;
                 this.insideWater = true;
-                this.timer.Start();
+                this.timer.Start(3);
             }
         } else {
             this.insideWater = false;

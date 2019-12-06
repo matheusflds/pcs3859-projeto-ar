@@ -8,9 +8,9 @@ public class CountDown : MonoBehaviour
     private int duration = 4;
     public int timeLeft; //Seconds Overall
     public Text countdown; //UI Text Object
-    public void Start()
+    public void Start(int duration)
     {
-        this.timeLeft = this.duration;
+        this.timeLeft = duration;
         StartCoroutine("LoseTime");
         Time.timeScale = 1; //Just making sure that the timeScale is right
     }

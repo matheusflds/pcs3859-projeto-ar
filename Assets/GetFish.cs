@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GetFish : MonoBehaviour
 {
+    private CountDown timer;
+    private bool counting;
     public GameObject fishManager;
     public Material standardMat;
     public Material nearFishMat;
@@ -13,10 +15,12 @@ public class GetFish : MonoBehaviour
     void Start()
     {
         fishManager = GameObject.Find("FishManager");
-        // Material mat = this.standardMat;
-        // if (mat != null) {
-        //     this.SetMaterial(mat);
-        // }
+        Material mat = this.standardMat;
+        if (mat != null) {
+            this.SetMaterial(mat);
+        }
+        CountDown countdown = gameObject.AddComponent(typeof(CountDown)) as CountDown;
+        this.timer = countdown;
     }
 
     // Update is called once per frame
@@ -29,24 +33,24 @@ public class GetFish : MonoBehaviour
             // Debug.Log("Distance: " + distance);
             if (distance <= 1.5f) {
                 Handheld.Vibrate();
-                // this.SetMaterial(this.capturingFishMat);
-                // SceneManager.LoadScene("FishCaughtScene");
+                this.SetMaterial(this.capturingFishMat);
+                if (!this.counting) {
+                    this.timer.Start(4);
+                    this.counting = true;
+                } else if(this.timer.timeLeft == 0) {
+                    SceneManager.LoadScene("FishCaughtScene");
+                    this.counting = false;
+                }
+            } else {
+                this.SetMaterial(this.standardMat);
+                this.counting = false;
             }
         }
     }
 
     private void SetMaterial(Material mat) {
-        GameObject ropeContainer = GameObject.Find("RopeContainer");
-        int childCount = ropeContainer.transform.childCount;
-        for (int i = 0; i < childCount; i++) {
-            GameObject ropeParts = ropeContainer.transform.GetChild(i).gameObject;
-            Renderer r = ropeParts.GetComponent<Renderer>();
-            r.material = mat;
-        }
-
-        // Renderer rend = GetComponent<Renderer>();
-        // if (rend != null) {
-        //     rend.material = mat;
-        // }
+        GameObject ropeContainer = GameObject.Find("FishingIndicator");
+        Renderer r = ropeContainer.GetComponent<Renderer>();
+        r.material = mat;
     }
 }
