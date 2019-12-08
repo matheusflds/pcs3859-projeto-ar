@@ -27,12 +27,12 @@ Dentre os requisitos, aqueles que serão implementados no MVP estão em negrito.
   * **Animação da poça d’água**
   * **Controles da vara de pescar**
   * **Animação da captura do peixe**
-  * Catálogo de peixes "capturados"
+  * **Catálogo de peixes "capturados"**
   * Quebra da linha
   * Selecionar Vara de pescar
 
 * **Requisitos não funcionais**:
-  * **Facilidade de uso**
+  * Facilidade de uso
   * **Plataforma: celular (Android)**
 
 ### Experiência do usuário
@@ -43,5 +43,5 @@ Com o celular em mãos, o usuário iria apontar para uma superfície plana. Em s
 ### Software e Hardware
 ---
 
-* **_Hardware_**: Smartphone (Android)
-* **_Software_**: Unity e Vuforia
+* **_Hardware_**: Smartphone (Android) - Samsung S10E (Android 9)
+* **_Software_**: Unity 2018.4.9f1, Vuforia Engine 8.3.8 e Autodesk Maya 2019
